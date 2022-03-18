@@ -1,3 +1,51 @@
 .hero{
+    height: 100vh;
+    padding-bottom: 100px;
+    .container {
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/hero-bg.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        max-width: 558px;
+        width: 100%;
+    }
+    &__form{
+        margin-bottom: 110px;
+    }
+    &__field{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-radius: 15px;
+        background-color: $second-dark-gray;
+        border: 1px solid $second-dark-gray;
+        max-width: 500px;
+        &:hover{
+            border-color: rgba(255, 255, 255, 0.38);
+        }
+    }
+    &__input{
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $poppins-regular,$sans-serif;
+        color: rgba(255, 255, 255, 0.38);
+        background-color: transparent;
+        margin-left: 15px;
+        letter-spacing: 1px;
 
+    }
+}
+.orange{
+    color: $orange;
 }

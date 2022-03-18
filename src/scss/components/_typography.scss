@@ -1,0 +1,18 @@
+.title{
+    font-family: $poppins-medium, $sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 70px;
+    color: $white;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.text{
+    font-family: $poppins-regular, $sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: $white;
+    opacity: 0.5;
+    margin-bottom: 60px;
+}
