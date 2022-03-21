@@ -6,4 +6,9 @@
     color: $white;
     opacity: 0.7;
     padding: 12px 28px;
+    border-radius: 8px;
+    transition: all .2s linear;
+    &:hover{
+        opacity: 1;
+    }
 }

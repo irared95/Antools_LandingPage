@@ -7,8 +7,38 @@
     border-radius: 8px;
     padding: 12px 28px;
     display: inline-block;
+    white-space: nowrap;
+    transition: all .2s linear;
     &:hover{
         opacity: 0.7;
-        transition: all .2s linear;
+    }
+}
+.btn-link{
+    font-family: $poppins-semiBold, $sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    border-radius: 8px;
+    padding: 9px 38px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all .2s linear;
+    &:hover{
+        background-color: $orange;
+    }
+}
+.btn-outline{
+    font-family: $poppins-medium, $sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: $orange;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 16px 36px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all .2s linear;
+    &:hover{
+         opacity: 0.7;
     }
 }

@@ -19,31 +19,12 @@
         max-width: 558px;
         width: 100%;
     }
+    &__text{
+        margin-bottom: 60px;
+        max-width: 100%;
+    }
     &__form{
         margin-bottom: 110px;
-    }
-    &__field{
-        display: flex;
-        align-items: center;
-        padding: 8px;
-        border-radius: 15px;
-        background-color: $second-dark-gray;
-        border: 1px solid $second-dark-gray;
-        max-width: 500px;
-        &:hover{
-            border-color: rgba(255, 255, 255, 0.38);
-        }
-    }
-    &__input{
-        width: 100%;
-        font-size: 14px;
-        line-height: 20px;
-        font-family: $poppins-regular,$sans-serif;
-        color: rgba(255, 255, 255, 0.38);
-        background-color: transparent;
-        margin-left: 15px;
-        letter-spacing: 1px;
-
     }
 }
 .orange{

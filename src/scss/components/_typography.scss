@@ -8,11 +8,11 @@
     text-transform: capitalize;
 }
 .text{
+    max-width: 426px;
     font-family: $poppins-regular, $sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     color: $white;
     opacity: 0.5;
-    margin-bottom: 60px;
 }

@@ -1,11 +1,8 @@
 .brands{
-
     &__wrapper{
-        background: rgba(44, 53, 61, 0.2);
-        backdrop-filter: blur(50px);
+        background-color: $second-dark-gray;
         border-radius: 25px;
         padding: 55px 82px;
-
     }
     &__title{
         font-family: $poppins-medium, $sans-serif;
