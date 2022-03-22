@@ -650,22 +650,30 @@ button {
   padding: 32px;
   width: 100%;
   border-radius: 15px;
-  border: 2px solid red;
   transition: transform 0.2s linear;
   opacity: 0.6;
+  display: flex;
+  flex-direction: column;
 }
 .card-tool:hover {
+  background-color: rgba(40, 48, 54, 0.6);
   transform: translateY(-20px);
   opacity: 1;
 }
-.card-tool__name {
+.card-tool__wrapper {
   margin-bottom: 30px;
+  display: flex;
+}
+.card-tool__name {
+  margin-left: 40px;
 }
 .card-tool__title {
   font-family: "Poppins Medium", sans-serif;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 36px;
   color: #fff;
+  margin-bottom: 3px;
+  font-weight: 100;
 }
 .card-tool__subtitle {
   font-family: "Poppins Regular", sans-serif;
@@ -679,6 +687,18 @@ button {
   line-height: 30px;
   color: #fff;
   margin-bottom: 30px;
+}
+.card-tool__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.card-tool__add-wishlist, .card-tool__add-folder {
+  display: inline-block;
+}
+.card-tool__add-wishlist {
+  margin-right: 20px;
 }
 
 body {
