@@ -559,7 +559,6 @@ button {
 
 .hero {
   height: 100vh;
-  padding-bottom: 100px;
 }
 .hero .container {
   height: 100%;
@@ -613,7 +612,7 @@ button {
 }
 
 .subscribe {
-  margin: 240px 0;
+  padding: 100px 0 200px;
 }
 .subscribe__text, .subscribe__title {
   text-align: center;
@@ -625,6 +624,9 @@ button {
   margin: 0 auto;
 }
 
+.tools {
+  padding: 60px 0 200px;
+}
 .tools__title, .tools__text {
   text-align: center;
 }
@@ -699,6 +701,33 @@ button {
 }
 .card-tool__add-wishlist {
   margin-right: 20px;
+}
+.card-tool__add-wishlist.active path {
+  fill: #fd3b41;
+}
+
+.newcomer-tools {
+  padding: 200px 0 100px;
+}
+.newcomer-tools__text {
+  margin-bottom: 60px;
+}
+.newcomer-tools__left, .newcomer-tools__right {
+  width: 50%;
+}
+.newcomer-tools__wrapper {
+  display: flex;
+}
+.newcomer-tools__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 24px;
+  grid-row-gap: 50px;
+}
+
+.reviews {
+  padding: 100px 0;
 }
 
 body {

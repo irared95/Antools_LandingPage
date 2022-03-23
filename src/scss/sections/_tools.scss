@@ -1,4 +1,5 @@
 .tools{
+    padding: 60px 0 200px;
     &__title,
     &__text{
         text-align: center;
@@ -75,6 +76,11 @@
     }
     &__add-wishlist{
         margin-right: 20px;
+        &.active{
+            path{
+               fill: rgba(253, 59, 65, 1);
+            }
+        }
     }
 
 }
