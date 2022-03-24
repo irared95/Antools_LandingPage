@@ -1,3 +1,48 @@
 .reviews{
     padding: 100px 0;
+    &__wrapper {
+        .reviews__slider-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__slider{
+        padding: 0 80px;
+    }
+    &__right{
+       max-width: 400px;
+       margin-left: 60px;
+    }
+    &__arrow {
+        position: absolute;
+        top: 37%;
+        width: 80px;
+        height: 100px;
+        z-index: 1;
+        path{
+            opacity: 0.3;
+        }
+        &:hover{
+            path{
+                transition: stroke .2s linear, opacity .2s linear;
+                opacity: 1;
+                stroke: $orange;
+            }
+        }
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
+    }
+    &__dots {
+        position: absolute;
+        bottom: -100px;
+        
+    }
 }
+
+
+

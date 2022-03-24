@@ -407,6 +407,112 @@ button {
   cursor: pointer;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 .btn {
   font-family: "Poppins SemiBold", sans-serif;
   font-size: 16px;
@@ -454,6 +560,65 @@ button {
   opacity: 0.7;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  line-height: 0;
+}
+.dots .slick-active button {
+  background-color: #FF6E30;
+}
+.dots button {
+  width: 44px;
+  height: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  transition: all 0.2s linear;
+}
+.dots button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer {
+  padding: 75px 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__name {
+    margin-bottom: 40px;
+  }
+}
+.footer__name, .footer__contacts {
+  max-width: 260px;
+}
+.footer__contacts-link {
+  font-style: normal;
+  color: #fff;
+}
+
 .header__menu {
   display: flex;
   align-items: center;
@@ -474,11 +639,6 @@ button {
   display: flex;
   align-items: center;
   padding: 30px;
-  font-family: "Poppins Medium", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  opacity: 0.5;
 }
 .nav__link svg {
   margin-left: 10px;
@@ -513,12 +673,29 @@ button {
   text-transform: capitalize;
 }
 
+.title-2 {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
 .text {
   max-width: 426px;
   font-family: "Poppins Regular", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.text-2 {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
   color: #fff;
   opacity: 0.5;
 }
@@ -728,6 +905,43 @@ button {
 
 .reviews {
   padding: 100px 0;
+}
+.reviews__wrapper .reviews__slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews__slider {
+  padding: 0 80px;
+}
+.reviews__right {
+  max-width: 400px;
+  margin-left: 60px;
+}
+.reviews__arrow {
+  position: absolute;
+  top: 37%;
+  width: 80px;
+  height: 100px;
+  z-index: 1;
+}
+.reviews__arrow path {
+  opacity: 0.3;
+}
+.reviews__arrow:hover path {
+  transition: stroke 0.2s linear, opacity 0.2s linear;
+  opacity: 1;
+  stroke: #FF6E30;
+}
+.reviews__arrow-left {
+  left: 0;
+}
+.reviews__arrow-right {
+  right: 0;
+}
+.reviews__dots {
+  position: absolute;
+  bottom: -100px;
 }
 
 body {
