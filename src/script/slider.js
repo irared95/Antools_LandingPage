@@ -13,6 +13,16 @@ document.addEventListener('DOMContentLoaded', function () {
         nextArrow: '<button class="reviews__arrow-right reviews__arrow"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
             '<path d="M18 36L30 24L18 12"  stroke="white"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>\n' +
             '</svg></button>',
+
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            },
+        ]
     });
 
 

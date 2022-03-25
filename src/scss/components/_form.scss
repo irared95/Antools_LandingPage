@@ -9,6 +9,9 @@
     &:hover{
         border-color: rgba(255, 255, 255, 0.38);
     }
+    @include breakpoint($mobile-bp) {
+        padding: 6px;
+    }
 }
 .input{
     width: 100%;

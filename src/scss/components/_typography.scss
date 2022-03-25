@@ -6,10 +6,15 @@
     color: $white;
     margin-bottom: 30px;
     text-transform: capitalize;
+    @include breakpoint($mobile-bp) {
+        font-size: 35px;
+        line-height: 45px;
+    }
 }
 .title-2{
     font-family: $poppins-medium, $sans-serif;
     font-size: 16px;
+    line-height: 18px;
     font-weight: 300;
     color: $white;
     margin-bottom: 20px;
@@ -22,15 +27,12 @@
     line-height: 30px;
     color: $white;
     opacity: 0.5;
+    @include breakpoint($mobile-bp) {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
 .text-2{
-    //font-family: $poppins-medium, $sans-serif;
-    //font-size: 16px;
-    //font-weight: 300;
-    //line-height: 18px;
-    //color: $white;
-    //opacity: 0.5;
-
     font-family: $poppins-medium, $sans-serif;
     font-size: 14px;
     font-weight: 300;

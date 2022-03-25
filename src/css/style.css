@@ -528,6 +528,11 @@ button {
 .btn:hover {
   opacity: 0.7;
 }
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 8px 23px;
+  }
+}
 
 .btn-link {
   font-family: "Poppins SemiBold", sans-serif;
@@ -566,6 +571,9 @@ button {
   font-size: 0;
   line-height: 0;
 }
+.dots li:not(:last-child) {
+  margin-right: 18px;
+}
 .dots .slick-active button {
   background-color: #FF6E30;
 }
@@ -577,14 +585,12 @@ button {
   font-size: 0;
   line-height: 0;
   transition: all 0.2s linear;
-}
-.dots button:not(:last-child) {
-  margin-right: 20px;
+  background-color: #283036;
 }
 
 .footer {
   padding: 75px 0;
-  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
 }
 .footer__wrapper {
   display: flex;
@@ -672,10 +678,17 @@ button {
   margin-bottom: 30px;
   text-transform: capitalize;
 }
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
 
 .title-2 {
   font-family: "Poppins Medium", sans-serif;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 300;
   color: #fff;
   margin-bottom: 20px;
@@ -689,6 +702,12 @@ button {
   line-height: 30px;
   color: #fff;
   opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .text-2 {
@@ -721,6 +740,11 @@ button {
 }
 .field:hover {
   border-color: rgba(255, 255, 255, 0.38);
+}
+@media screen and (max-width: 768px) {
+  .field {
+    padding: 6px;
+  }
 }
 
 .input {
@@ -772,6 +796,11 @@ button {
   border-radius: 25px;
   padding: 55px 82px;
 }
+@media screen and (max-width: 1024px) {
+  .brands__wrapper {
+    padding: 26px;
+  }
+}
 .brands__title {
   font-family: "Poppins Medium", sans-serif;
   font-size: 24px;
@@ -782,20 +811,50 @@ button {
   text-align: center;
   margin-bottom: 55px;
 }
+@media screen and (max-width: 1024px) {
+  .brands__title {
+    margin-bottom: 36px;
+  }
+}
 .brands__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+@media screen and (max-width: 1024px) {
+  .brands__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .brands__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.brands__images {
+  display: block;
+  width: 100%;
+}
 
 .subscribe {
   padding: 100px 0 200px;
+}
+@media screen and (max-width: 1024px) {
+  .subscribe {
+    padding: 100px 0 100px;
+  }
 }
 .subscribe__text, .subscribe__title {
   text-align: center;
 }
 .subscribe__text {
   margin: 0 auto 100px;
+}
+@media screen and (max-width: 768px) {
+  .subscribe__text {
+    margin: 0 auto 70px;
+  }
 }
 .subscribe__field {
   margin: 0 auto;
@@ -810,6 +869,11 @@ button {
 .tools__text {
   margin: 0 auto 90px;
 }
+@media screen and (max-width: 1024px) {
+  .tools__text {
+    margin: 0 auto 60px;
+  }
+}
 .tools__load-more {
   text-align: center;
 }
@@ -821,8 +885,23 @@ button {
   grid-row-gap: 100px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1024px) {
+  .tools__list {
+    grid-row-gap: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tools__list {
+    display: block;
+  }
+}
 .tools__item {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .tools__item {
+    margin-bottom: 30px;
+  }
 }
 
 .card-tool {
@@ -854,6 +933,11 @@ button {
   margin-bottom: 3px;
   font-weight: 100;
 }
+@media screen and (max-width: 1024px) {
+  .card-tool__title {
+    line-height: 26px;
+  }
+}
 .card-tool__subtitle {
   font-family: "Poppins Regular", sans-serif;
   font-size: 18px;
@@ -882,6 +966,11 @@ button {
 .card-tool__add-wishlist.active path {
   fill: #fd3b41;
 }
+@media screen and (max-width: 768px) {
+  .card-tool {
+    padding: 26px;
+  }
+}
 
 .newcomer-tools {
   padding: 200px 0 100px;
@@ -889,11 +978,42 @@ button {
 .newcomer-tools__text {
   margin-bottom: 60px;
 }
+@media screen and (max-width: 1200px) {
+  .newcomer-tools__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .newcomer-tools__title {
+    text-align: center;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .newcomer-tools__left {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .newcomer-tools__left, .newcomer-tools__right {
   width: 50%;
 }
+@media screen and (max-width: 1200px) {
+  .newcomer-tools__left, .newcomer-tools__right {
+    width: 100%;
+  }
+}
 .newcomer-tools__wrapper {
   display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .newcomer-tools__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .newcomer-tools__list {
   display: grid;
@@ -902,21 +1022,96 @@ button {
   column-gap: 24px;
   grid-row-gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  .newcomer-tools__list {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newcomer-tools__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
 .reviews {
   padding: 100px 0;
+}
+@media screen and (max-width: 1024px) {
+  .reviews {
+    padding: 50px 0;
+  }
 }
 .reviews__wrapper .reviews__slider-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .reviews__wrapper .reviews__slider-item {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+.reviews__wrap {
+  background: rgba(40, 48, 54, 0.2);
+  max-width: 264px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.reviews__name {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.reviews__position {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+  opacity: 0.5;
 }
 .reviews__slider {
   padding: 0 80px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__slider {
+    padding: 0;
+  }
+}
+.reviews__left {
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .reviews__left {
+    margin-bottom: 30px;
+  }
+}
+.reviews__left img {
+  width: 100%;
+  display: block;
+}
 .reviews__right {
   max-width: 400px;
   margin-left: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .reviews__right {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reviews__text {
+    text-align: center;
+  }
 }
 .reviews__arrow {
   position: absolute;
@@ -939,9 +1134,10 @@ button {
 .reviews__arrow-right {
   right: 0;
 }
-.reviews__dots {
-  position: absolute;
-  bottom: -100px;
+@media screen and (max-width: 768px) {
+  .reviews__arrow {
+    display: none;
+  }
 }
 
 body {

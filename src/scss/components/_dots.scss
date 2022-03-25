@@ -3,6 +3,11 @@
     justify-content: center;
     font-size: 0;
     line-height: 0;
+    li {
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+    }
     .slick-active {
         button {
             background-color: $orange;
@@ -16,8 +21,6 @@
         font-size: 0;
         line-height: 0;
         transition: all 0.2s linear;
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+        background-color: $second-dark-gray;
     }
 }
