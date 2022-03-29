@@ -1,7 +1,8 @@
-.footer{
+.footer {
     padding: 75px 0;
     border-top: 0.5px solid rgba(255, 255, 255, 0.15);
-    &__wrapper{
+
+    &__wrapper {
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -10,24 +11,28 @@
             align-items: center;
         }
     }
-    &__logo{
+
+    &__logo {
         display: flex;
         align-items: center;
         @include breakpoint($mobile-bp) {
             margin-bottom: 40px;
         }
     }
-    &__name{
+
+    &__name {
         @include breakpoint($mobile-bp) {
             margin-bottom: 40px;
         }
     }
+
     &__name,
-    &__contacts{
+    &__contacts {
         max-width: 260px;
     }
-    &__contacts{
-        &-link{
+
+    &__contacts {
+        &-link {
             font-style: normal;
             color: $white;
         }

@@ -530,7 +530,11 @@ button {
 }
 @media screen and (max-width: 768px) {
   .btn {
-    padding: 8px 23px;
+    padding: 8px 19px;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -625,29 +629,32 @@ button {
   color: #fff;
 }
 
-.header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  padding: 0 15px;
 }
-.header__controls, .header__logo {
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: none;
+    left: 0;
+    right: 0;
+  }
+}
+.header__logo, .header__controls {
   min-width: 200px;
 }
 .header__controls {
   display: flex;
-}
-
-.nav__menu {
-  display: flex;
-}
-.nav__link {
-  display: flex;
   align-items: center;
-  padding: 30px;
-}
-.nav__link svg {
-  margin-left: 10px;
 }
 
 .controls__link {
@@ -667,6 +674,12 @@ button {
 }
 .link:hover {
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .link {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .title {
@@ -756,6 +769,175 @@ button {
   background-color: transparent;
   margin-left: 15px;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+  .input {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 5px;
+    letter-spacing: normal;
+  }
+}
+
+.logo--mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .logo--mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo--desktop {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1024px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1E252B;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    transform: translate(100%);
+    transition: all ease-in-out 0.3s;
+    visibility: hidden;
+  }
+}
+.nav__menu {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .nav__menu {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+.nav__item {
+  position: relative;
+}
+.nav__item:hover .nav__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s linear;
+}
+.nav__item:hover svg {
+  transform: rotate(-180deg);
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.nav__link svg {
+  margin-left: 10px;
+}
+.nav__sub-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 1024px) {
+  .nav__sub-list {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: -20px;
+    text-align: left;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.nav__sub-link {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  opacity: 0.5;
+  transition: border 0.2s linear, color 0.2s linear;
+}
+.nav__sub-link:hover {
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+.nav.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 4;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 30px;
+}
+.burger span, .burger:after, .burger:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #FF6E30;
+  transition: all ease-in-out 0.3s;
+}
+.burger span {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+.burger:before {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.burger:after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+.burger.active span {
+  background-color: transparent;
+}
+.burger.active:after {
+  top: 21px;
+  transform: rotate(45deg);
+}
+.burger.active:before {
+  top: 21px;
+  transform: rotate(-45deg);
 }
 
 .hero {

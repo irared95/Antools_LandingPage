@@ -1,4 +1,4 @@
-.btn{
+.btn {
     font-family: $poppins-semiBold, $sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -9,14 +9,21 @@
     display: inline-block;
     white-space: nowrap;
     transition: all .2s linear;
-    &:hover{
+
+    &:hover {
         opacity: 0.7;
     }
+
     @include breakpoint($mobile-bp) {
-        padding: 8px 23px;
+        padding: 8px 19px;
+        font-size: 13px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
     }
 }
-.btn-link{
+
+.btn-link {
     font-family: $poppins-semiBold, $sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -26,11 +33,13 @@
     display: inline-block;
     white-space: nowrap;
     transition: all .2s linear;
-    &:hover{
+
+    &:hover {
         background-color: $orange;
     }
 }
-.btn-outline{
+
+.btn-outline {
     font-family: $poppins-medium, $sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -41,7 +50,8 @@
     display: inline-block;
     white-space: nowrap;
     transition: all .2s linear;
-    &:hover{
-         opacity: 0.7;
+
+    &:hover {
+        opacity: 0.7;
     }
 }

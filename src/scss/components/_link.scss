@@ -11,4 +11,8 @@
     &:hover{
         opacity: 1;
     }
+    @include breakpoint($mobile-bp) {
+      font-size: 14px;
+        line-height: 16px;
+    }
 }

@@ -1,35 +1,37 @@
-.header{
-    &__menu{
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    padding: 0 15px;
+
+    @include breakpoint($tablet-bp) {
+        padding: 20px 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        transform: none;
+        left: 0;
+        right: 0;
     }
-    &__controls,
-    &__logo{
+
+    &__logo,
+    &__controls {
         min-width: 200px;
     }
-    &__controls{
-        display: flex;
-    }
-}
-.nav{
-    &__menu{
-        display: flex;
-    }
-    &__link{
+
+    &__controls {
         display: flex;
         align-items: center;
-        padding: 30px;
-        svg{
-            margin-left: 10px;
-        }
     }
-
 }
-.controls{
-    &__link{
+
+.controls {
+    &__link {
         margin-right: 10px;
     }
-
 }
+
+

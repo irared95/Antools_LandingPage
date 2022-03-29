@@ -1,0 +1,15 @@
+.logo {
+
+    &--mobile {
+        display: none;
+        @include breakpoint($tablet-bp) {
+            display: block;
+        }
+    }
+
+    &--desktop {
+        @include breakpoint($tablet-bp) {
+            display: none;
+        }
+    }
+}

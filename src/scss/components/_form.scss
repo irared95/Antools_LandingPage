@@ -22,4 +22,10 @@
     background-color: transparent;
     margin-left: 15px;
     letter-spacing: 1px;
+    @include breakpoint($mobile-bp) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 5px;
+        letter-spacing: normal;
+    }
 }

@@ -1,5 +1,5 @@
-.brands{
-    &__wrapper{
+.brands {
+    &__wrapper {
         background-color: $second-dark-gray;
         border-radius: 25px;
         padding: 55px 82px;
@@ -8,7 +8,8 @@
         }
 
     }
-    &__title{
+
+    &__title {
         font-family: $poppins-medium, $sans-serif;
         font-size: 24px;
         font-weight: 300;
@@ -21,7 +22,8 @@
             margin-bottom: 36px;
         }
     }
-    &__list{
+
+    &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -30,14 +32,16 @@
             align-items: center;
         }
     }
-    &__item{
+
+    &__item {
         @include breakpoint($tablet-bp) {
-              &:not(:last-child) {
-                   margin-bottom: 20px;
-              }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
         }
     }
-    &__images{
+
+    &__images {
         display: block;
         width: 100%;
     }
