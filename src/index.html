@@ -54,15 +54,30 @@
                             <a href="#" class="text-2 nav__link">Blog</a>
                         </li>
                     </ul>
-                    <div class="controls header__controls">
-                        <a href="#" class="link controls__link">Login</a>
-                        <a href="#" class="btn controls__btn">Sign up</a>
+                    <div class="header__controls">
+                        <div class="controls header__control">
+                            <a href="#" class="link controls__link">Login</a>
+                            <a href="#" class="btn controls__btn">Sign up</a>
+                        </div>
+                        <button class="wishlist wishlist--js header__wishlist wishlist--desktop">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                            </svg>
+                            <span class="counter--js">0</span>
+                        </button>
                     </div>
                 </nav>
-
-                <button class="burger burger--js">
-                    <span></span>
-                </button>
+                <div class="wishlist__burger">
+                    <button class="wishlist wishlist--js wishlist--mobile">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                        </svg>
+                        <span class="counter--js">0</span>
+                    </button>
+                    <button class="burger burger--js">
+                        <span></span>
+                    </button>
+                </div>
             </header>
             <div class="hero__wrapper">
                 <h1 class="title hero__title">Awesome tools for Designer & Developer<span class="orange">.</span></h1>
@@ -546,9 +561,13 @@
             </div>
         </div>
     </footer>
-    <script src="script/jquery.js"></script>
-    <script src="script/slick.min.js"></script>
-    <script src="js/script.js"></script>
 </main>
+<div class="overlay"></div>
+<div class="modal modal--js">
+        <button class="modal__close modal__close--js"></button>
+</div>
+<script src="script/jquery.js"></script>
+<script src="script/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

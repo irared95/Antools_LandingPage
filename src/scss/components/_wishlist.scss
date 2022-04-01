@@ -1,0 +1,48 @@
+.wishlist{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    svg{
+        path{
+            fill: $orange;
+        }
+    }
+    &__burger{
+        display: flex;
+        align-items: center;
+    }
+
+    &--mobile {
+        display: none;
+        @include breakpoint($tablet-bp) {
+            display: flex;
+            margin-right: 30px;
+        }
+    }
+
+    &--desktop {
+        @include breakpoint($tablet-bp) {
+            display: none;
+        }
+    }
+
+    span{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        position: absolute;
+        top: -10px;
+        right: -2px;
+        background-color: $second-dark-gray;
+        font-family: $poppins-medium, $sans-serif;
+        font-size: 15px;
+        color: $orange;
+    }
+
+}

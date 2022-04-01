@@ -18,6 +18,8 @@
 @import 'components/logo';
 @import 'components/nav';
 @import 'components/burger';
+@import 'components/wishlist';
+@import 'components/modal';
 //sections
 @import 'sections/hero';
 @import 'sections/brands';
@@ -37,4 +39,8 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

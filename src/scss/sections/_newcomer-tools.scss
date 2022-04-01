@@ -16,7 +16,7 @@
     }
 
     &__left {
-        @include breakpoint($tablet-bp) {
+        @include breakpoint($desktop-bp) {
             margin-bottom: 60px;
             display: flex;
             flex-direction: column;
