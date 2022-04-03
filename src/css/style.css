@@ -1006,10 +1006,10 @@ button {
 }
 
 .modal {
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
   background-color: #283036;
-  height: 300px;
+  height: 410px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1017,6 +1017,7 @@ button {
   z-index: 7;
   border-radius: 5px;
   display: none;
+  padding: 45px 20px 20px 20px;
 }
 .modal__close {
   position: absolute;
@@ -1045,6 +1046,36 @@ button {
 }
 .modal.active {
   display: block;
+}
+
+.table {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.table__tr {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.table__tr > div {
+  width: 50%;
+  padding: 15px 20px;
+  border-right: 1px solid #fff;
+}
+.table__head {
+  color: #fff;
+  background: #1E252B;
+  font-weight: 700;
+}
+.table__tr {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .hero {

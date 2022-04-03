@@ -1,0 +1,35 @@
+.table {
+    font-family: $poppins-regular, $sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $white;
+    border-left: 1px solid $white;
+    &__tr {
+        display: flex;
+        flex-wrap: nowrap;
+        & > div {
+            width: 50%;
+            padding: 15px 20px;
+            border-right: 1px solid $white;
+        }
+    }
+    &__head{
+        color: $white;
+        background: $dark-gray;
+        font-weight: 700;
+    }
+    &__tr{
+
+        color: $white;
+        border-bottom: 1px solid $white;
+
+    }
+    //&__head,
+    //&__body{
+    //    border: 1px solid $white;
+    //}
+}
