@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../../fonts/poppins/Poppins-Regular.woff2) format('woff2'), url(../../fonts/poppins/Poppins-Regular.woff) format('woff'), url(../../fonts/poppins/Poppins-Regular.ttf) format('ttf');
+    src: url(../fonts/poppins/Poppins-Regular.woff2) format('woff2'), url(../fonts/poppins/Poppins-Regular.woff) format('woff'), url(../fonts/poppins/Poppins-Regular.ttf) format('ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(../../fonts/poppins/Poppins-Medium.woff2) format('woff2'), url(../../fonts/poppins/Poppins-Medium.woff) format('woff'), url(../../fonts/poppins/Poppins-Medium.ttf) format('ttf');
+    src: url(../fonts/poppins/Poppins-Medium.woff2) format('woff2'), url(../fonts/poppins/Poppins-Medium.woff) format('woff'), url(../fonts/poppins/Poppins-Medium.ttf) format('ttf');
 }
 
 @font-face {
@@ -19,5 +19,5 @@
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url(../../fonts/poppins/Poppins-SemiBold.ttf) format('ttf');
+    src: url(../fonts/poppins/Poppins-SemiBold.ttf) format('ttf');
 }
