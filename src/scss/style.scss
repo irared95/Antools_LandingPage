@@ -1,0 +1,47 @@
+//utils
+@import 'utils/reset';
+@import 'utils/fonts';
+@import 'utils/variable';
+@import 'utils/mixins';
+@import 'utils/my-normalize';
+//libs
+@import 'libs/slick-slider/slick';
+//components
+@import 'components/btn';
+@import 'components/dots';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/link';
+@import 'components/typography';
+@import 'components/socials';
+@import 'components/form';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/burger';
+@import 'components/wishlist';
+@import 'components/modal';
+@import 'components/table';
+//sections
+@import 'sections/hero';
+@import 'sections/brands';
+@import 'sections/subscribe';
+@import 'sections/tools';
+@import 'sections/newcomer-tools';
+@import 'sections/reviews';
+
+
+
+
+body {
+    background-color: $dark-gray;
+}
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

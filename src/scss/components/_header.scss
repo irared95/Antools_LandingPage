@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    padding: 0 15px;
+    background-color: $second-dark-gray;
+
+    @include breakpoint($tablet-bp) {
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transform: none;
+        left: 0;
+        right: 0;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+    }
+
+    &__control {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wishlist{
+        margin-left: 30px;
+    }
+}
+
+.controls {
+    &__link {
+        margin-right: 10px;
+    }
+}
+
+

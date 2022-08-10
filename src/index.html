@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <title>Antools</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <a href="#" target="blank" class="header__logo logo logo--mobile">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+                <nav class="nav nav--js">
+                    <a href="#" target="blank" class="header__logo logo logo--desktop">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="#" class="text-2 nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="text-2 nav__link">Categories
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-opacity="0.55"
+                                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="nav__sub-list">
+                                <li class="nav__sub-item">
+                                    <a href="#" class="nav__sub-link">Page 1</a>
+                                </li>
+                                <li class="nav__sub-item">
+                                    <a href="#" class="nav__sub-link">Page 2</a>
+                                </li>
+                                <li class="nav__sub-item">
+                                    <a href="#" class="nav__sub-link">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="text-2 nav__link">My Collections</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="text-2 nav__link">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="header__controls">
+                        <div class="controls header__control">
+                            <a href="#" class="link controls__link">Login</a>
+                            <a href="#" class="btn controls__btn">Sign up</a>
+                        </div>
+                        <button class="wishlist wishlist--js header__wishlist wishlist--desktop">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                            </svg>
+                            <span class="counter--js">0</span>
+                        </button>
+                    </div>
+                </nav>
+                <div class="wishlist__burger">
+                    <button class="wishlist wishlist--js wishlist--mobile">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                        </svg>
+                        <span class="counter--js">0</span>
+                    </button>
+                    <button class="burger burger--js">
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <div class="hero__wrapper">
+                <h1 class="title hero__title">Awesome tools for Designer & Developer<span class="orange">.</span></h1>
+                <p class="text hero__text">Antool is a web collection of information on paid or free Design and
+                    Development tools </p>
+                <form class="form hero__form" action="#">
+                    <div class="field hero__field">
+                        <svg width="30" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                stroke="white" stroke-opacity="0.38" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                            <path d="M21 20.9999L16.65 16.6499" stroke="white" stroke-opacity="0.38" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input class="input hero__input" name="text" type="text" required placeholder="find more than 430+ tools...">
+                        <button class="btn hero__btn" type="submit">Search</button>
+                    </div>
+                </form>
+                <ul class="socials hero__socials">
+                    <li class="socials__item">
+                        <a href="#" target="blank" class="socials__link">
+                            <img src="./images/icon-facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" target="blank" class="socials__link">
+                            <img src="./images/icon-instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" target="blank" class="socials__link">
+                            <img src="./images/icon-twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="tools">
+        <div class="container">
+            <h2 class="title tools__title">Most Popular Tools</h2>
+            <p class="text tools__text">Tools for the best Designers and Developers most popularly used in the world</p>
+            <ul class="tools__list">
+                <li class="tools__item">
+                    <div class="card-tool" data-id="111">
+                        <div class="card-tool__wrapper">
+                            <div class="card-tool__logo">
+                                <img src="./images/icon-figma.svg" alt="figma">
+                            </div>
+                            <div class="card-tool__name">
+                                <h3 class="card-tool__title">FIGMA</h3>
+                                <span class="card-tool__subtitle">Free</span>
+                            </div>
+                        </div>
+                        <div class="card-tool__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-tool__actions">
+                            <div class="card-tool__controls">
+                                <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="card-tool__add-folder">
+                                    <img src="./images/icon-folder.svg" alt="folder">
+                                </a>
+                            </div>
+                            <a href="#" class="btn-link card-tools__link">Visit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="tools__item">
+                    <div class="card-tool" data-id="112">
+                        <div class="card-tool__wrapper">
+                            <div class="card-tool__logo">
+                                <img src="./images/icon-sketch.svg" alt="sketch">
+                            </div>
+                            <div class="card-tool__name">
+                                <h3 class="card-tool__title">Sketch</h3>
+                                <span class="card-tool__subtitle">Trial & Paid</span>
+                            </div>
+                        </div>
+                        <div class="card-tool__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-tool__actions">
+                            <div class="card-tool__controls">
+                                <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="card-tool__add-folder">
+                                    <img src="./images/icon-folder.svg" alt="folder">
+                                </a>
+                            </div>
+                            <a href="#" class="btn-link card-tools__link">Visit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="tools__item">
+                    <div class="card-tool" data-id="113">
+                        <div class="card-tool__wrapper">
+                            <div class="card-tool__logo">
+                                <img src="./images/icon-visual-studio-code.svg" alt="visual-studio-code">
+                            </div>
+                            <div class="card-tool__name">
+                                <h3 class="card-tool__title">Visual Studio Code</h3>
+                                <span class="card-tool__subtitle">Free</span>
+                            </div>
+                        </div>
+                        <div class="card-tool__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-tool__actions">
+                            <div class="card-tool__controls">
+                                <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="card-tool__add-folder">
+                                    <img src="./images/icon-folder.svg" alt="folder">
+                                </a>
+                            </div>
+                            <a href="#" class="btn-link card-tools__link">Visit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="tools__item">
+                    <div class="card-tool" data-id="114">
+                        <div class="card-tool__wrapper">
+                            <div class="card-tool__logo">
+                                <img src="./images/icon-notion.svg" alt="Notion">
+                            </div>
+                            <div class="card-tool__name">
+                                <h3 class="card-tool__title">Notion</h3>
+                                <span class="card-tool__subtitle">Free & Paid</span>
+                            </div>
+                        </div>
+                        <div class="card-tool__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-tool__actions">
+                            <div class="card-tool__controls">
+                                <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="card-tool__add-folder">
+                                    <img src="./images/icon-folder.svg" alt="folder">
+                                </a>
+                            </div>
+                            <a href="#" class="btn-link card-tools__link">Visit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="tools__item">
+                    <div class="card-tool" data-id="115">
+                        <div class="card-tool__wrapper">
+                            <div class="card-tool__logo">
+                                <img src="./images/icon-slack.svg" alt="Slack">
+                            </div>
+                            <div class="card-tool__name">
+                                <h3 class="card-tool__title">Slack</h3>
+                                <span class="card-tool__subtitle">Free & Paid</span>
+                            </div>
+                        </div>
+                        <div class="card-tool__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-tool__actions">
+                            <div class="card-tool__controls">
+                                <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="card-tool__add-folder">
+                                    <img src="./images/icon-folder.svg" alt="folder">
+                                </a>
+                            </div>
+                            <a href="#" class="btn-link card-tools__link">Visit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="tools__item">
+                    <div class="card-tool" data-id="116">
+                        <div class="card-tool__wrapper">
+                            <div class="card-tool__logo">
+                                <img src="./images/icon-invision.svg" alt="Invision">
+                            </div>
+                            <div class="card-tool__name">
+                                <h3 class="card-tool__title">Invision</h3>
+                                <span class="card-tool__subtitle">Free & Paid</span>
+                            </div>
+                        </div>
+                        <div class="card-tool__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-tool__actions">
+                            <div class="card-tool__controls">
+                                <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="card-tool__add-folder">
+                                    <img src="./images/icon-folder.svg" alt="folder">
+                                </a>
+                            </div>
+                            <a href="#" class="btn-link card-tools__link">Visit</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="tools__load-more">
+                <a href="#" class="btn-outline tools__link">Load more</a>
+            </div>
+        </div>
+    </section>
+    <section class="brands">
+        <div class="container">
+            <div class="brands__wrapper">
+                <h3 class="brands__title">Trusted more than 150+ brand</h3>
+                <ul class="brands__list">
+                    <li class="brands__item">
+                        <div class="brands__images">
+                            <img src="./images/brand-microsoft.svg" alt="microsoft">
+                        </div>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__images">
+                            <img src="./images/brand-google.svg" alt="google">
+                        </div>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__images">
+                            <img src="./images/brand-slack.svg" alt="slack">
+                        </div>
+                    </li>
+                    <li class="brands__item">
+                        <div class="brands__images">
+                            <img src="./images/brand-wordpress.svg" alt="wordpress">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="newcomer-tools">
+        <div class="container">
+            <div class="newcomer-tools__wrapper">
+                <div class="newcomer-tools__left">
+                    <h2 class="title newcomer-tools__title">Newcomer Tools</h2>
+                    <div class="text newcomer-tools__text">
+                        <p>Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
+                    </div>
+                    <a href="#" class="btn newcomer-tools__btn">Explore more</a>
+                </div>
+                <div class="newcomer-tools__right">
+                    <ul class="newcomer-tools__list">
+                        <li class="newcomer-tools__item">
+                            <div class="card-tool" data-id="117">
+                                <div class="card-tool__wrapper">
+                                    <div class="card-tool__logo">
+                                        <img src="./images/icon-zeplin.svg" alt="Zeplin">
+                                    </div>
+                                    <div class="card-tool__name">
+                                        <h3 class="card-tool__title">Zeplin</h3>
+                                        <span class="card-tool__subtitle">Free & Paid</span>
+                                    </div>
+                                </div>
+                                <div class="card-tool__desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="card-tool__actions">
+                                    <div class="card-tool__controls">
+                                        <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="card-tool__add-folder">
+                                            <img src="./images/icon-folder.svg" alt="folder">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn-link card-tools__link">Visit</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="newcomer-tools__item">
+                            <div class="card-tool" data-id="118">
+                                <div class="card-tool__wrapper">
+                                    <div class="card-tool__logo">
+                                        <img src="./images/icon-phpstorm.svg" alt="PHPStorm">
+                                    </div>
+                                    <div class="card-tool__name">
+                                        <h3 class="card-tool__title">PHPStorm</h3>
+                                        <span class="card-tool__subtitle">Free</span>
+                                    </div>
+                                </div>
+                                <div class="card-tool__desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="card-tool__actions">
+                                    <div class="card-tool__controls">
+                                        <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="card-tool__add-folder">
+                                            <img src="./images/icon-folder.svg" alt="folder">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn-link card-tools__link">Visit</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="newcomer-tools__item">
+                            <div class="card-tool" data-id="119">
+                                <div class="card-tool__wrapper">
+                                    <div class="card-tool__logo">
+                                        <img src="./images/icon-toolbox.svg" alt="Toolbox">
+                                    </div>
+                                    <div class="card-tool__name">
+                                        <h3 class="card-tool__title">Toolbox</h3>
+                                        <span class="card-tool__subtitle">Free</span>
+                                    </div>
+                                </div>
+                                <div class="card-tool__desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="card-tool__actions">
+                                    <div class="card-tool__controls">
+                                        <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="card-tool__add-folder">
+                                            <img src="./images/icon-folder.svg" alt="folder">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn-link card-tools__link">Visit</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="newcomer-tools__item">
+                            <div class="card-tool" data-id="120">
+                                <div class="card-tool__wrapper">
+                                    <div class="card-tool__logo">
+                                        <img src="./images/icon-procreate.svg" alt="Procreate">
+                                    </div>
+                                    <div class="card-tool__name">
+                                        <h3 class="card-tool__title">Procreate</h3>
+                                        <span class="card-tool__subtitle">Paid</span>
+                                    </div>
+                                </div>
+                                <div class="card-tool__desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="card-tool__actions">
+                                    <div class="card-tool__controls">
+                                        <a href="#" class="card-tool__add-wishlist add-wishlist--js">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="card-tool__add-folder">
+                                            <img src="./images/icon-folder.svg" alt="folder">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="btn-link card-tools__link">Visit</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__wrapper">
+                <div class="reviews__slider reviews__slider--js">
+                    <div class="reviews__slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__avatar">
+                                <img src="./images/avatar-man.png" alt="avatar">
+                            </div>
+                            <div class="reviews__wrap">
+                                <p class="reviews__name">Ronald Richards</p>
+                                <p class="reviews__position">Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="text-2 reviews__text">
+                                <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__avatar">
+                                <img src="./images/avatar-man.png" alt="avatar">
+                            </div>
+                            <div class="reviews__wrap">
+                                <p class="reviews__name">Ronald Richards</p>
+                                <p class="reviews__position">Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="text-2 reviews__text">
+                                <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__avatar">
+                                <img src="./images/avatar-man.png" alt="avatar">
+                            </div>
+                            <div class="reviews__wrap">
+                                <p class="reviews__name">Ronald Richards</p>
+                                <p class="reviews__position">Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="text-2 reviews__text">
+                                <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <h2 class="title subscribe__title">Become a contributor?</h2>
+            <p class="text subscribe__text">Join us and get tips & tricks to become a great Designer and Developer</p>
+            <form class="subscribe__form" action="#">
+                <div class="field subscribe__field">
+                    <input class="input subscribe__input" name="text" type="text" required placeholder="Enter your email...">
+                    <button class="btn subscribe__btn" type="submit">Join Us</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="logo footer__logo">
+                    <img src="./images/logo.png" alt="antools logo">
+                </a>
+                <div class="footer__name">
+                    <h3 class="title-2 footer__name-title">Copyright 2021. Antools</h3>
+                    <div class="text-2 footer__name-text">
+                        <p>Antool is a web collection of information on paid or free Design and Development tools</p>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <h3 class="title-2 footer__contacts-title">Contact Us</h3>
+                    <ul class="footer__contacts-list">
+                        <li class="text-2 footer__contacts-item">
+                            <a class="footer__contacts-link" href="tel: +621987463">+621987463</a>
+                        </li>
+                        <li class="text-2 footer__contacts-item">
+                            <address class="footer__contacts-link">M Building, No.10 A</address>
+                        </li>
+                        <li class="text-2 footer__contacts-item">
+                            <a class="footer__contacts-link" href="mailto:antools@awesome.com">antools@awesome.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+<div class="overlay"></div>
+<div class="modal modal--js">
+        <button class="modal__close modal__close--js"></button>
+    <div class="table table--js">
+        <div class="table__head">
+            <div class="table__tr">
+                <div>Name</div>
+                <div>Variant</div>
+            </div>
+        </div>
+        <div class="table__body"></div>
+    </div>
+</div>
+<script src="script/jquery.js"></script>
+<script src="script/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

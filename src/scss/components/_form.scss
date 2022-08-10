@@ -1,0 +1,31 @@
+.field{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: $second-dark-gray;
+    border: 1px solid $second-dark-gray;
+    max-width: 500px;
+    &:hover{
+        border-color: rgba(255, 255, 255, 0.38);
+    }
+    @include breakpoint($mobile-bp) {
+        padding: 6px;
+    }
+}
+.input{
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $poppins-regular,$sans-serif;
+    color: rgba(255, 255, 255, 0.38);
+    background-color: transparent;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    @include breakpoint($mobile-bp) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 5px;
+        letter-spacing: normal;
+    }
+}

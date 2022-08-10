@@ -1,0 +1,101 @@
+.reviews{
+    padding: 100px 0;
+    @include breakpoint($tablet-bp) {
+        padding: 50px 0;
+    }
+    &__wrapper {
+        .reviews__slider-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            @include breakpoint($tablet-bp) {
+                flex-direction: column;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    &__wrap{
+        background: rgba(40, 48, 54, 0.2);
+        max-width: 264px;
+        padding: 10px 24px;
+        border-radius: 8px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__name{
+        font-family: $poppins-medium, $sans-serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 300;
+        color: $white;
+        opacity: 0.8;
+        margin-bottom: 10px;
+    }
+    &__position{
+        font-family: $poppins-regular, $sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        color: $white;
+        opacity: 0.5;
+    }
+    &__slider{
+        padding: 0 80px;
+        @include breakpoint($mobile-bp) {
+           padding: 0;
+        }
+    }
+    &__left{
+        position: relative;
+        @include breakpoint($tablet-bp) {
+            margin-bottom: 30px;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    &__right{
+       max-width: 400px;
+       margin-left: 60px;
+        @include breakpoint($tablet-bp) {
+            margin-left: 0;
+        }
+    }
+    &__text{
+        @include breakpoint($tablet-bp) {
+            text-align: center;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        top: 37%;
+        width: 80px;
+        height: 100px;
+        z-index: 1;
+        path{
+            opacity: 0.3;
+        }
+        &:hover{
+            path{
+                transition: stroke .2s linear, opacity .2s linear;
+                opacity: 1;
+                stroke: $orange;
+            }
+        }
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
+        @include breakpoint($mobile-bp) {
+            display: none;
+        }
+    }
+}
+
+
+
